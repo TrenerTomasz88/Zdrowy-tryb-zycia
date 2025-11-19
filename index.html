@@ -1,117 +1,163 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Program Zdrowego Odchudzania</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SLIMLIFE — Kompletny Program Odchudzania</title>
+
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            color: #333;
+            background-color: #000;
+            color: #fff;
         }
+
+        /* NAVIGATION */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #0d0d0d;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav .logo {
+            display: flex;
+            align-items: center;
+            font-size: 26px;
+            font-weight: bold;
+            color: #00FF7F;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00FF7F;
+        }
+
+        /* HERO SECTION */
         header {
-            background: #4CAF50;
-            color: white;
-            padding: 60px 20px;
             text-align: center;
+            padding: 120px 20px;
+            background: linear-gradient(135deg, #000 40%, #003c26);
         }
+
         header h1 {
-            font-size: 36px;
+            font-size: 50px;
+            color: #00FF7F;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
+
         header p {
+            font-size: 22px;
+            color: #ccc;
+        }
+
+        .btn-main {
+            margin-top: 30px;
+            padding: 15px 30px;
             font-size: 20px;
+            background-color: #00FF7F;
+            color: #000;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: 0.3s;
         }
+
+        .btn-main:hover {
+            transform: scale(1.05);
+        }
+
         section {
-            padding: 40px 20px;
-            max-width: 1000px;
+            max-width: 1100px;
             margin: auto;
+            padding: 50px 20px;
         }
-        .features, .steps, .reviews {
+
+        h2 {
+            color: #00FF7F;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .features, .steps {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
+
         .box {
+            background: #111;
+            border: 1px solid #00FF7F;
             padding: 20px;
-            background: #f4f4f4;
             border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
         }
-        form input, form textarea, form button {
-            width: 100%;
-            padding: 12px;
-            margin: 8px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        form button {
-            background: #4CAF50;
-            color: white;
-            cursor: pointer;
-            border: none;
-        }
+
         footer {
             text-align: center;
-            background: #333;
-            color: white;
-            padding: 20px;
+            padding: 30px;
             margin-top: 30px;
+            background: #0d0d0d;
         }
     </style>
 </head>
+
 <body>
 
+<!-- NAVIGATION -->
+<nav>
+    <div class="logo">SLIMLIFE</div>
+    <div>
+        <a href="index.html">Strona główna</a>
+        <a href="o-programie.html">O programie</a>
+        <a href="opinie.html">Opinie</a>
+        <a href="cennik.html">Cennik</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
 <header>
-    <h1>Program Zdrowego Odchudzania</h1>
-    <p>Zmień swoje życie w 30 dni — zdrowo i skutecznie!</p>
+    <h1>SLIMLIFE — Kompletny Program Odchudzania</h1>
+    <p>30 dni do lepszej sylwetki. Bez głodówek. Bez stresu. Z prawdziwymi efektami.</p>
+    <button class="btn-main">Dołącz teraz</button>
 </header>
 
 <section>
-    <h2>Co oferujemy?</h2>
+    <h2>Co oferuje SLIMLIFE?</h2>
     <div class="features">
         <div class="box">Indywidualny plan żywieniowy</div>
+        <div class="box">Treningi dopasowane do poziomu</div>
         <div class="box">Wsparcie motywacyjne 24/7</div>
-        <div class="box">Zdrowe przepisy na każdy dzień</div>
-        <div class="box">Prosty plan ćwiczeń w domu</div>
+        <div class="box">Nowoczesna aplikacja progresu</div>
     </div>
 </section>
 
 <section>
     <h2>Jak to działa?</h2>
     <div class="steps">
-        <div class="box">1. Wypełnij formularz zgłoszeniowy</div>
-        <div class="box">2. Otrzymasz indywidualny plan</div>
-        <div class="box">3. Zaczynasz 30-dniowy program</div>
+        <div class="box">1. Wypełnij formularz</div>
+        <div class="box">2. Otrzymasz swój indywidualny plan</div>
+        <div class="box">3. Zaczynasz 30-dniową metamorfozę</div>
     </div>
-</section>
-
-<section>
-    <h2>O programie</h2>
-    <p>Ten program został stworzony, aby pomóc ludziom zdrowo schudnąć bez głodówek i ciężkich treningów. 
-       Bazuje na naturalnych produktach, prostych ćwiczeniach oraz psychologicznym wsparciu, które pomaga utrzymać motywację.</p>
-</section>
-
-<section>
-    <h2>Opinie uczestników</h2>
-    <div class="reviews">
-        <div class="box">„Schudłam 7 kg w 30 dni! Polecam każdemu.” – Anna</div>
-        <div class="box">„Najłatwiejszy program, jaki próbowałem. Bez stresu.” – Michał</div>
-        <div class="box">„Czułam się świetnie, jadłam normalnie i waga spadła!” – Karolina</div>
-    </div>
-</section>
-
-<section>
-    <h2>Dołącz do programu</h2>
-    <form>
-        <input type="text" placeholder="Imię i nazwisko" required>
-        <input type="email" placeholder="Adres e-mail" required>
-        <textarea placeholder="Napisz, jaki masz cel" required></textarea>
-        <button type="submit">Wyślij zgłoszenie</button>
-    </form>
 </section>
 
 <footer>
-    © 2025 Program Zdrowego Odchudzania — Wszystkie prawa zastrzeżone
+    © 2025 SLIMLIFE — Kompletny Program Odchudzania
 </footer>
 
 </body>

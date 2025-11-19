@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Zdrowego Odchudzania</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 36px;
+        }
+        header p {
+            font-size: 20px;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .features, .steps, .reviews {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .box {
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 10px;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Program Zdrowego Odchudzania</h1>
+    <p>Zmień swoje życie w 30 dni — zdrowo i skutecznie!</p>
+</header>
+
+<section>
+    <h2>Co oferujemy?</h2>
+    <div class="features">
+        <div class="box">Indywidualny plan żywieniowy</div>
+        <div class="box">Wsparcie motywacyjne 24/7</div>
+        <div class="box">Zdrowe przepisy na każdy dzień</div>
+        <div class="box">Prosty plan ćwiczeń w domu</div>
+    </div>
+</section>
+
+<section>
+    <h2>Jak to działa?</h2>
+    <div class="steps">
+        <div class="box">1. Wypełnij formularz zgłoszeniowy</div>
+        <div class="box">2. Otrzymasz indywidualny plan</div>
+        <div class="box">3. Zaczynasz 30-dniowy program</div>
+    </div>
+</section>
+
+<section>
+    <h2>O programie</h2>
+    <p>Ten program został stworzony, aby pomóc ludziom zdrowo schudnąć bez głodówek i ciężkich treningów. 
+       Bazuje na naturalnych produktach, prostych ćwiczeniach oraz psychologicznym wsparciu, które pomaga utrzymać motywację.</p>
+</section>
+
+<section>
+    <h2>Opinie uczestników</h2>
+    <div class="reviews">
+        <div class="box">„Schudłam 7 kg w 30 dni! Polecam każdemu.” – Anna</div>
+        <div class="box">„Najłatwiejszy program, jaki próbowałem. Bez stresu.” – Michał</div>
+        <div class="box">„Czułam się świetnie, jadłam normalnie i waga spadła!” – Karolina</div>
+    </div>
+</section>
+
+<section>
+    <h2>Dołącz do programu</h2>
+    <form>
+        <input type="text" placeholder="Imię i nazwisko" required>
+        <input type="email" placeholder="Adres e-mail" required>
+        <textarea placeholder="Napisz, jaki masz cel" required></textarea>
+        <button type="submit">Wyślij zgłoszenie</button>
+    </form>
+</section>
+
+<footer>
+    © 2025 Program Zdrowego Odchudzania — Wszystkie prawa zastrzeżone
+</footer>
+
+</body>
+</html>
